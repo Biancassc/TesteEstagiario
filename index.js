@@ -25,3 +25,9 @@ function validateForm (event){
 }
 
 form.addEventListener('submit', validateForm);
+
+form.addEventListener('keydown',function(event){
+    if (event.key === 'Enter'){
+        validateForm(event);
+    }
+});
