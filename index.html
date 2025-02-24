@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script src="index.js" defer></script> 
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+    <h2>Formulário</h2>
+
+    <form id="contactForm">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" placeholder="Seu nome"><br><br>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Seu email"><br><br>
+        
+        <label for="phone">Telefone:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Seu telefone" pattern="[0-9]{10,11}" required title="Apenas números"><br><br>
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="Obrigada" style="display:none">
+        <h3>Obrigada pelo seu cadastro!</h3>
+    </div>
+
+</body>
+</html>
